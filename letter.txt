@@ -1,0 +1,10 @@
+To whom it may concern:
+
+I'm a front-end somewhat full stacking developer here in Asheville. I'm writing to you after reading a request for web devlopment work from you agency. My most recent project was a mobile store built with React Native and a React Native app or app that levereges the React web library would be a first choice for my next project. 
+
+A tiny bit more about me: I started out in Flash then worked on Joomla and Wordpress sites for quite a while. In 2014 to 2015 I mostly focused on MEAN stack application development--Dropping Angular 1 in early 2016 (but not Node Express or Mongo) I started to focus on ES6, React and a fuller understanding of javascript.
+
+I sincerley appreciate any time and consideration you may give to me and this proposal to discuss opportunities for projects or employment at your agency.
+
+Best,
+Alex
