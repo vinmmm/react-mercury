@@ -136,6 +136,8 @@ oReq.addEventListener("load", reqListener);
 oReq.open("GET", "http://www.example.org/example.txt");
 oReq.send();
 
+
+
 // xhr 2
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 function readBody(xhr) {
@@ -187,3 +189,5 @@ var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
 oReq.open("GET", "http://localhost:9100/v1/arcades");
 oReq.send();
+
+
