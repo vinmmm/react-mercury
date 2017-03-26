@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FettsJS</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div class="header">
+<h2>FettsJS</h2>
+<img src="devil-lock-yellow-1.png">
+</div>
+
+<h3>React Router</h3>
+<p style="padding: 0px 0px 25px 10px;">Follow these steps to make multiple pages in your single page app</p>
+<p class="bat-routing">So, do this first--Import three properties from the React Router object.</p>
+<pre>
+<code class="soda">import { Router, Route, browserHistory, Link } from 'react-router';
+</code>
+</pre>
+
+<p class="bat-routing">Now do this second--Create a file called New.js, then add the code below to it and import your new file to your App.js file.</p>
+
+<pre>
+<code class="soda">class New extends Component {
+    render(){ 
+        return (
+        
+            &lt;div&gt;
+                &lt;h1&gt;hello new page&lt;/h1&gt;
+                &lt;Link to="/"&gt;App&lt;/Link&gt;
+            &lt;/div&gt;;
+        
+          )
+
+    }
+}
+</code>
+</pre>
+
+<p class="bat-routing">Third thing--Just like you did for New.js, import React router's properties to your App.js file and then add the Link tags with a path to your New.js file as shown below.</p>
+<pre>
+<code class="soda">&lt;Link to="/new"&gt;New&lt;/Link&gt;
+</code>
+</pre>
+
+<p class="bat-routing">Fourth thing--Mount React Router and the route components for New.js and App.js.</p>
+<pre>
+<code class="soda">ReactDOM.render((
+  &lt;Router history={browserHistory}&gt;
+    &lt;Route path="/" component={App} /&gt;
+    &lt;Route path="/new" component={New} /&gt;
+    
+    
+  &lt;/Router&gt;
+  ), document.getElementById('root'))
+
+
+</code>
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+
+}
+
+body {
+	margin: 0;
+    padding: 0;
+}
+
+.header {
+	background: midnightblue;
+	color: deeppink;
+    padding: 5px 0 20px 0;
+    text-align: center;
+    border-bottom: solid 8px black;
+}
+
+
+h3 {
+	font-size: 45px;
+	padding-left: 10px;
+
+}
+
+h5 {
+	padding: 0px 0px 25px 10px;
+	font-size: 20px;
+}
+
+.bat-routing {
+  color: midnightblue;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.soda {
+	display: block;
+	background: black;
+	color: hotpink;
+	padding-left: 10px;
+	
+
+}
