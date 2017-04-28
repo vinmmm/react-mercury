@@ -22,13 +22,15 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Saturn React App</h2>
-          <Link to="/new">New</Link> 
+          <h2>Martian React App</h2>
+          <Link className="link" to="/new">New</Link> 
+          <Link className="link" to="/rovers">Rovers</Link> 
         </div>
       </div>
     );
   }
 }
+
 
 
 

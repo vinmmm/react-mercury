@@ -32,3 +32,53 @@ button {
   background-color: crimson;
   margin: 10px;
 }
+
+.link {
+  display: inline-block;
+  color: green;
+  padding: 20px;
+  
+}
+
+
+
+h1 {
+   text-transform: uppercase;
+   text-align: center;
+ }
+
+h3 {
+    color: #e66662;}
+
+a {
+  color: #e66662;
+  text-decoration: none;}
+
+a:hover {
+  color: red;}
+
+table {
+  padding: 0px;
+  margin-left:auto; 
+  margin-right:auto;}
+
+td {
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+.blank {
+  background: #f7f7f7;
+}
+
+
+
+
+
+
+
+
+

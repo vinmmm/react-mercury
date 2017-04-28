@@ -58,5 +58,42 @@
 </code>
 </pre>
 
+<script>
+//1
+  var result = add(5, 5);
+        function add(num1, num2) {
+            return num1 + num2;
+
+
+}
+alert(result);
+//2
+var numbers = [1, 4, 9];
+var roots = numbers.map(Math.sqrt);
+alert(roots);
+//3
+var kvArray = [{key: 1, value: 10}, 
+               {key: 2, value: 20}, 
+               {key: 3, value: 30}];
+
+var reformattedArray = kvArray.map(function(obj) { 
+   var rObj = {};
+   rObj[obj.key] = obj.value;
+   return rObj;
+});
+console.log(kvArray);
+console.log(reformattedArray);
+
+// reformattedArray is now [{1: 10}, {2: 20}, {3: 30}], 
+
+readFile("example.txt", function(err, contents) {
+    if (err) {
+throw err; }
+    alert(contents);
+});
+alert("Hi!");
+
+
+</script>
 </body>
 </html>

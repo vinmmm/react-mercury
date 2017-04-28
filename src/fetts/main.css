@@ -37,7 +37,14 @@ h5 {
   color: midnightblue;
   font-size: 20px;
   font-weight: bold;
-  padding-left: 10px;
+  padding: 10px;
+}
+
+.boc-routing {
+  display: inline-block;
+  color: gray;
+  font-size: 12px;
+  padding: 10px;
 }
 
 .soda {

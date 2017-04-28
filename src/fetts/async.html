@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FettsJS</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div class="header">
+<h2>FettsJS</h2>
+<img src="devil-lock-yellow-1.png">
+</div>
+
+<div class="nav">
+  <button id="my-btn">my button</button>
+</div>
+
+<h3>Async in ES6</h3>
+<p class="bat-routing">So, JQuery</p>
+<p class="boc-routing">So, import JQuery then create a new file with the following code and import that too.</p>
+<pre>
+<code class="prettyprint lang-js">$(function() {                                    // When the DOM is ready
+
+  var times;                                      // Declare global variable
+  $.ajax({
+    beforeSend: function(xhr) {                   // Before requesting data
+      if (xhr.overrideMimeType) {                 // If supported
+        xhr.overrideMimeType("application/json"); // set MIME to prevent errors
+      }
+    }
+  });
+
+  // FUNCTION THAT COLLECTS DATA FROM THE JSON FILE
+  function loadTimetable() {                    // Declare function
+    $.getJSON('data/example.json')              // Try to collect JSON data
+    .done( function(data){                      // If successful
+      times = data;                             // Store it in a variable
+    }).fail( function() {                       // If a problem: show message
+      $('#event').html('Sorry! We could not load the timetable at the moment');
+    });
+  }
+
+  loadTimetable();                              // Call the function 
+</code>
+</pre>
+
+<p class="bat-routing">So, Fetch</p>
+<p class="boc-routing">So...</p>
+<pre>
+<code class="prettyprint lang-js">So, some code...
+</code>
+</pre>
+
+<p class="bat-routing">So, now in Javascript</p>
+<p class="boc-routing">So...</p>
+<pre>
+<code class="prettyprint lang-js">So, some code...
+</code>
+</pre>
+
+
+
+<script>
+  let button = document.getElementById("my-btn");
+             button.onclick = function(event) {
+                 alert("Clicked");
+             };
+
+
+
+</script>
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+</body>
+</html>

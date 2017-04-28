@@ -1,0 +1,22 @@
+{
+  "food-trucks": [
+    {
+      "name": "Gypsy Queen",
+      "location": "Carrier Park",
+      "date": "May 1",
+      "map": "img/map-ca.png"
+    },
+    {
+      "name": "Appalachian Chic",
+      "location": "Montford Community Center",
+      "date": "May 15",
+      "map": "img/map-tx.png"
+    },
+    {
+      "name": "Deli Llammma",
+      "location": "River Arts",
+      "date": "May 30",
+      "map": "img/map-ny.png"
+    }
+  ]
+}
