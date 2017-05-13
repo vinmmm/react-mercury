@@ -48,10 +48,16 @@ componentWillMount(){
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Martian React App</h2>
-          <Link className="link" to="/new">New</Link> 
-          <Link className="link" to="/">App</Link> 
+          
+
         </div>
         <h2>This is the mars rovers page</h2>
+        <div className="nav">
+          <Link className="link" to="/">App</Link> 
+          <Link className="link" to="/rovers">Rovers</Link> 
+          <Link className="link" to="/flintstones">Flintstones</Link>
+          <Link className="link" to="/new">New</Link> 
+         </div>
       </div>
       <div class="index">
 <h1 id="header"><a>Index</a></h1>

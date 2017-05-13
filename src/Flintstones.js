@@ -1,41 +1,85 @@
-class Flintstones extends Component { render(){
-return (
-<div className="app">
-<List id='todo' title="To Do" cards={ this.props.cards.filter((card) => card.status === "todo")
-} />
-<List id='in-progress' title="In Progress" cards={ this.props.cards.filter((card) => card.status === "in-progress")
-} />
-<List id='done' title='Done' cards={ this.props.cards.filter((card) => card.status === "done")
-} />
-</div> );
-} }
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import { Link } from 'react-router';
 
-let cardsList = [ {
-    id: 1,
-    title: "Read the Book",
-    description: "I should read the whole book",
-    status: "in-progress",
-    tasks: []
-}, {
-    id: 2,
-    title: "Write some code",
-    description: "Code along with the samples in the book",
-    status: "todo",
-    tasks: [
-{
-id: 1,
-        name: "ContactList Example",
-done: true },
-{
-id: 2,
-        name: "Kanban Example",
-        done: false
-      },
-{
-id: 3,
-        name: "My own experiments",
-done: false }
-] },
-];
+
+
+
+// Child Component
+class XItem extends Component {
+render() { 
+	return (
+<li>
+{this.props.all} is {this.props.nall}
+</li> 
+
+   );
+
+} 
+
+}
+
+
+
+// Parent Component
+class Flintstones extends Component {
+render() { 
+
+	return (
+
+ <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Martian React App</h2>
+         
+          
+        </div>
+        <h2>Flintstones Page</h2>
+        <div className="nav">
+          <Link className="link" to="/">App</Link> 
+          <Link className="link" to="/rovers">Rovers</Link> 
+          <Link className="link" to="/flintstones">Flintstones</Link> 
+          <Link className="link" to="/new">New</Link>
+         </div>
+
+<div className="Space-list">
+<ul>
+
+		<ListItem when="1960s" name="Great Gazoo" /> 
+		<ListItem when="1960s" name="Spacely, Jetsons" /> 
+		<ListItem when="1980s" name="Spacely, Mudd Club" />
+		<ListItem when="1970s" name="Space Ace, Kiss" />
+		<XItem all="1960s" nall="GG" />
+		
+	</ul>
+</div>	
+	  </div>
+
+
+
+
+
+
+
+ );
+
+} 
+
+}
+// Child Component
+class ListItem extends Component {
+render() { 
+	return (
+<li>
+{this.props.when} is {this.props.name}
+</li> 
+
+   );
+
+} 
+
+}
 
 export default Flintstones;
+
+
