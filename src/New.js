@@ -18,16 +18,16 @@ let cardsList = [ {
     tasks: [
 {
 id: 1,
-        name: "ContactList Example",
+        name: "Mission Health Pratt",
 done: true },
 {
 id: 2,
-        name: "Kanban Example",
+        name: "Mission Health Pratt Health and Rehab",
         done: false
       },
 {
 id: 3,
-        name: "My own experiments",
+        name: "My own",
 done: false }
 ] },
 ];
