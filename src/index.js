@@ -9,14 +9,15 @@ import PhysicianHome from './PhysicianHome';
 
 
 
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 
 
 
 ReactDOM.render((
   <Router history={browserHistory}>
-  	<Route path="/" component={App} />
+  	<Route path="/" component={App}>
+  	<IndexRoute component={Home}/>
   	<Route path="/new" component={New} />
   	<Route path="/rovers" component={Rovers} />
   	<Route path="/flintstones" component={Flintstones} />
