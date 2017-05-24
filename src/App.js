@@ -28,6 +28,7 @@ class App extends Component {
           <Link className="link" to="/rovers">Rovers</Link> 
           <Link className="link" to="/flintstones">Flintstones</Link> 
           <Link className="link" to="/new">New</Link>
+          <Link className="link" to="/game">Game</Link>
          </div>
 
         </div>

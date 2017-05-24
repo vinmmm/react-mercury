@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import CheckList from './CheckList';
+//Setting State
+//A new state can be set at any time
+//If you want the component to have an initial state, you can set it on the class constructor. 
+//Here were adding a constructor function to define a new key called showDetails in the component’s state
 class Card extends Component { 
   constructor() {
     super(...arguments);
